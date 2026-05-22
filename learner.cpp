@@ -3,7 +3,7 @@
   phrase it doesn't know, it will prompt the user to enter a response to the
   phrase and add it to the file.
 */
-#include <learner.h>
+#include "learner.h"
 using namespace::std;
 
 void learner(string inputPhrase) {

@@ -1,4 +1,4 @@
-#include <learner.h>
+#include "learner.h"
 using namespace std;
 
 // Declare functions that will be called
@@ -7,6 +7,7 @@ int getPhrase(string phrase);
 void learner(string storePhrase);
 
 int main () {
+  showMessage();
   std::string userInput;
 
   do {
@@ -16,7 +17,7 @@ int main () {
     // x or X will terminate the program.
 
     if(userInput != "x" && userInput != "X") {
-      if(getPhrase(userInput)) {
+      if(getPhrase(userInput)) {;
       // keep going
       } else {
       // Unknown input, ask user for response and store it
